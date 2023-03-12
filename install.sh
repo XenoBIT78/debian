@@ -16,4 +16,4 @@ apt update
 apt upgrade -y
 
 # Install defaults
-apt install nala mc zsh
+apt install nala mc zsh fonts-firacode
