@@ -8,7 +8,8 @@ fi
 
 # Change Debian to SID Branch
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
-cp sources.list /etc/apt/sources.list
+echo "deb http://deb.debian.org/debian/ sid main non-free contrib" > /etc/apt/sources.list
+echo "deb-src http://deb.debian.org/debian/ sid main non-free contrib" >> /etc/apt/sources.list
 
 # Update packages list and update system
 apt update
