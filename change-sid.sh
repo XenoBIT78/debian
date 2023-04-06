@@ -2,7 +2,7 @@
 
 # Check if Script is Run as Root
 if [[ $EUID -ne 0 ]]; then
-  echo "You must be root to run this script, please use: sudo ./install.sh" 2>&1
+  echo "You must be root to run this script, please use: sudo ./$0" 2>&1
   exit 1
 fi
 
